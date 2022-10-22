@@ -1,0 +1,21 @@
+body{
+    background-color: rgb(162, 163, 81);
+}
+header{
+    background-color: darkgray;
+}
+nav{
+    text-align: center;
+    padding-bottom: 20px;
+}
+nav li{
+    display:inline-block;
+    font-weight: bold;
+    font-size: 30px;
+    margin-left: 20px;
+    text-decoration: underline;
+}
+h1{
+    font-size: 5ex;
+    padding-bottom: 10px;
+}
