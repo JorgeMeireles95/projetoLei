@@ -1,21 +1,63 @@
-body{
-    background-color: rgb(162, 163, 81);
+body {
+    background-color: #fefefe
 }
-header{
-    background-color: darkgray;
+
+header {
+    width: 100%;
+    height: 100px;
+    background: #000000;
 }
-nav{
-    text-align: center;
-    padding-bottom: 20px;
+
+nav {
+    height: 100%;
 }
-nav li{
-    display:inline-block;
-    font-weight: bold;
+
+nav ul {
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+
+}
+
+li img {
+    max-width: 20%;
+}
+
+.cabPrincipal {
+    padding-right: 4%;
+    color: aliceblue;
+    font-family: 'Inter';
+    font-style: italic;
+    font-weight: 200;
     font-size: 30px;
-    margin-left: 20px;
-    text-decoration: underline;
+    line-height: 36px;
 }
-h1{
-    font-size: 5ex;
-    padding-bottom: 10px;
+
+.contato {
+    padding-right: 8%;
+}
+
+section{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 30px;
+}
+
+section h1{
+    font-size: 40px;
+    font-weight: bold;
+    font-style: italic;
+    padding-top: 44px;
+
+}
+
+section input{
+    font-size: 30px;
+    border-radius: 40px;
+    background-color:lavender;
+    justify-items: center;
+    padding: 0 5%;
 }
