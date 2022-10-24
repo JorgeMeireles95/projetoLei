@@ -1,17 +1,20 @@
-// uma função  que bisca os testo <h1> e <h2>
+const inputPesquisa = document.querySelector("#inputPesquisa");
+const destino = document.querySelector("#destino");
+const btnPesquisa = document.querySelector("#btn-pesquisa");
 
-//função vai receber uma  texto e vou procurar coisa similares
-
-
-let nome = ""
-
-function  buscar (nome){
-   // return  document.getElementsByName("hello").innerHTML;
-return  document.getElementByName("hello").textContent;
-}
-document.getElementById("texto").textContent
-
-console(document.getElementByName("hello").textContent);
-
+const pesquisa = document.querySelector("#pesquisa")
+btnPesquisa.addEventListener("click", () => {
+   pesquisa.childNodes.forEach(el => {
+      if (el.nodeType === 1 && !inputPesquisa.value.length) {
+         el.style.display = '';
+      } else {
+         if (el.nodeType === 1 && el.getAttribute("id") == inputPesquisa.value) {
+            el.style.display = '';
+         } else if (el.nodeType === 1) {
+            el.style.display = 'none';
+         }
+      }
+   });
+});
 
 
